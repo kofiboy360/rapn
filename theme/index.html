@@ -515,7 +515,7 @@ margin: 0rem !important;
             </div>
             <div class="w-tab-content">
               <div data-w-tab="View All" class="w-tab-pane w--tab-active">
-                {%- assign collection = collections.event | filter: "f_start-date-time,gte,today", "ALL", page.inputPath | sort: "f_start-date-time" | limit: 3 -%}<div class="w-dyn-list">
+                {%- assign collection = collections.event | sort: "f_start-date-time" | limit: 3 -%}<div class="w-dyn-list">
                   {%- unless collection.length == 0 -%}<div role="list" class="collection-list w-dyn-items">
                     {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
                       <div class="f-career-card">
@@ -551,7 +551,7 @@ margin: 0rem !important;
                 </div>
               </div>
               <div data-w-tab="Events" class="w-tab-pane">
-                {%- assign collection = collections.event | filter: "f_start-date-time,gte,today; f_event-type,eq,Event", "ALL", page.inputPath | sort: "f_start-date-time" | limit: 3 -%}<div class="w-dyn-list">
+                {%- assign collection = collections.event | filter: "f_event-type,eq,Event", "ALL", page.inputPath | sort: "f_start-date-time" | limit: 3 -%}<div class="w-dyn-list">
                   {%- unless collection.length == 0 -%}<div role="list" class="collection-list w-dyn-items">
                     {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
                       <div class="f-career-card">
@@ -587,7 +587,7 @@ margin: 0rem !important;
                 </div>
               </div>
               <div data-w-tab="Webinars" class="w-tab-pane">
-                {%- assign collection = collections.event | filter: "f_start-date-time,gte,today; f_event-type,eq,Webinar", "ALL", page.inputPath | sort: "f_start-date-time" | limit: 3 -%}<div class="w-dyn-list">
+                {%- assign collection = collections.event | filter: "f_event-type,eq,Webinar", "ALL", page.inputPath | sort: "f_start-date-time" | limit: 3 -%}<div class="w-dyn-list">
                   {%- unless collection.length == 0 -%}<div role="list" class="collection-list w-dyn-items">
                     {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
                       <div class="f-career-card">
@@ -623,7 +623,7 @@ margin: 0rem !important;
                 </div>
               </div>
               <div data-w-tab="Workshops" class="w-tab-pane">
-                {%- assign collection = collections.event | filter: "f_start-date-time,gte,today; f_event-type,eq,Workshop", "ALL", page.inputPath | sort: "f_start-date-time" | limit: 3 -%}<div class="w-dyn-list">
+                {%- assign collection = collections.event | filter: "f_event-type,eq,Workshop", "ALL", page.inputPath | sort: "f_start-date-time" | limit: 3 -%}<div class="w-dyn-list">
                   {%- unless collection.length == 0 -%}<div role="list" class="collection-list w-dyn-items">
                     {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
                       <div class="f-career-card">
