@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html data-wf-page="66c890177ca4688e94a34c96" data-wf-site="66c890167ca4688e94a34c42"><head><link rel="preconnect" crossorigin="true" href="https://assets.website-files.com">
+<html data-wf-page="66c890177ca4688e94a34c96" data-wf-site="66c890167ca4688e94a34c42"><head><link rel="preconnect" crossorigin="true" href="https://assets.website-files.com">{%- seo seo -%}
   <meta charset="utf-8">
-  <title>Blogs | Regulatory Affairs Professionals Network (RAPN)</title>
-  <meta content="Blogs |  Regulatory Affairs Professionals Network (RAPN)" name="description">
-  <meta content="Blogs |  Regulatory Affairs Professionals Network (RAPN)" property="og:title">
-  <meta content="Blogs |  Regulatory Affairs Professionals Network (RAPN)" property="og:description">
-  <meta content="https://cdn.prod.website-files.com/66c890167ca4688e94a34c42/66c9e923fdfb4395bce9c260_Navy%20And%20Grey%20Classic%20Initials%20Attorney%20Law%20Logo%20Design%20(1)-p-800.png" property="og:image">
-  <meta content="Blogs |  Regulatory Affairs Professionals Network (RAPN)" property="twitter:title">
-  <meta content="Blogs |  Regulatory Affairs Professionals Network (RAPN)" property="twitter:description">
-  <meta content="https://cdn.prod.website-files.com/66c890167ca4688e94a34c42/66c9e923fdfb4395bce9c260_Navy%20And%20Grey%20Classic%20Initials%20Attorney%20Law%20Logo%20Design%20(1)-p-800.png" property="twitter:image">
-  <meta property="og:type" content="website">
-  <meta content="summary_large_image" name="twitter:card">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta content="Webflow" name="generator">
   <link href="/assets/css/normalize.css" rel="stylesheet" type="text/css">
   <link href="/assets/css/webflow.css" rel="stylesheet" type="text/css">
   <link href="/assets/css/rapn.webflow.css" rel="stylesheet" type="text/css">
@@ -21,8 +20,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
   <script type="text/javascript">WebFont.load({  google: {    families: ["Droid Serif:400,400italic,700,700italic","Poppins:100,200,300,regular,500,600,700,800,900"]  }});</script>
   <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
-  <link href="{{ settings.site.favicon | default: "/assets/images/favicon.png" }}" rel="shortcut icon" type="image/x-icon">
-  <link href="{{ settings.site.apple_touch_icon | default: "/assets/images/webclip.png" }}" rel="apple-touch-icon"><!--  Please keep this css code to improve the font quality -->
+  <link href="{{ settings.site.favicon | default: "/assets/images/favicon.jpg" }}" rel="shortcut icon" type="image/x-icon">
+  <link href="{{ settings.site.apple_touch_icon | default: "/assets/images/webclip.jpg" }}" rel="apple-touch-icon"><!--  Please keep this css code to improve the font quality -->
   <style>
   * {
   -webkit-font-smoothing: antialiased;
@@ -235,12 +234,12 @@ margin: 0rem !important;
         <div class="padding-global">
           <div class="container-large">
             <div class="padding-section-medium">
-              {%- assign collection = collections.blogs-news | filter: "f_featured,eq,true", "ALL", page.inputPath | limit: 1 | sort: "-created-on" -%}<div class="blog_featured_list-wrapper w-dyn-list">
+              {%- assign collection = collections.blogs-news | filter: "f_featured,eq,true", "ALL", page.inputPath | sort: "-created-on" | limit: 1 -%}<div class="blog_featured_list-wrapper w-dyn-list">
                 {%- unless collection.length == 0 -%}<div role="list" class="blog_featured_list w-dyn-items">
                   {%- for item in collection -%}<div role="listitem" class="blog_featured_item w-dyn-item">
                     <div class="blog_featured_component">
                       <div class="blog_featured_content">
-                        <div class="blog_featured_author">
+                        <div data-w-id="e07166cb-1652-552c-8055-07acec7c1d44" style="opacity:0" class="blog_featured_author">
                           {%- assign authorOfBlogs-news = item.data.f_author-details | resolveReference -%}<a href="{{ authorOfBlogs-news.url }}" class="blog_featured_author-description w-inline-block">{%- assign authorOfBlogs-news = item.data.f_author-details | resolveReference -%}<img alt="{{ images.0.alt | escape }}" loading="lazy" src="{{ authorOfBlogs-news.data.f_picture.url }}" class="blog_featured_author-photo">
                             {%- assign ref = item.data.f_author-details | resolveReference -%}<div class="blog_featured_author-name">{{ ref.data.title }}</div>
                           </a>
@@ -248,19 +247,19 @@ margin: 0rem !important;
                         </div>
                         <div class="padding-bottom padding-small"></div>
                         <a href="{{ item.url }}" class="blog_featured_item-link w-inline-block">
-                          <h1 class="">{{ item.data.title }}</h1>
+                          <h1 data-w-id="e07166cb-1652-552c-8055-07acec7c1d4c" style="opacity:0" class="">{{ item.data.title }}</h1>
                         </a>
                         <div class="padding-bottom padding-small"></div>
-                        <p class="">{{ item.data.f_post-summary }}</p>
+                        <p data-w-id="e07166cb-1652-552c-8055-07acec7c1d4f" style="opacity:0" class="">{{ item.data.f_post-summary }}</p>
                         <div class="padding-bottom padding-small"></div>
-                        <a href="{{ item.url }}" class="learn-more_component w-inline-block">
+                        <a data-w-id="e07166cb-1652-552c-8055-07acec7c1d52" style="opacity:0" href="{{ item.url }}" class="learn-more_component w-inline-block">
                           <div>{{ texts.-52bd880f }}</div>
                           <div class="learn-more_arrow w-embed"><svg height="100%" viewBox="0 0 25 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path fill-rule="evenodd" clip-rule="evenodd" d="M20.0384 0.218756L24.7817 4.97188C25.0728 5.26355 25.0728 5.73645 24.7817 6.02812L20.0384 10.7812C19.7473 11.0729 19.2754 11.0729 18.9843 10.7812C18.6932 10.4896 18.6932 10.0167 18.9843 9.72499L22.4552 6.24688L0 6.24688L0 4.75312L22.4552 4.75312L18.9843 1.27501C18.6932 0.98333 18.6932 0.510432 18.9843 0.218756C19.2754 -0.0729188 19.7473 -0.0729188 20.0384 0.218756Z" fill="currentcolor"></path>
                             </svg></div>
                         </a>
                       </div>
-                      <a href="{{ item.url }}" class="blog_featured_image-link w-inline-block">
+                      <a data-w-id="5ba5d730-589a-1a41-8560-69bbe62e9504" style="opacity:0" href="{{ item.url }}" class="blog_featured_image-link w-inline-block">
                         <div class="blog_featured_content-right"><img alt="{{ images.0.alt | escape }}" loading="lazy" src="{{ item.data.f_thumbnail-image.url }}" class="blog_featured_image"></div>
                       </a>
                     </div>
@@ -282,9 +281,9 @@ margin: 0rem !important;
                 <h2>{{ texts.4b6bc54 }}</h2>
               </div>
               <div class="blog_component">
-                {%- assign collection = collections.blogs-news | sort: "-created-on" -%}<div class="blog_list-wrapper w-dyn-list">
-                  {%- unless collection.length == 0 -%}<div role="list" class="blog_list w-dyn-items">
-                    {%- for item in collection -%}<div role="listitem" class="blog_item w-dyn-item">
+                {%- assign collection = collections.blogs-news | sort: "-created-on" -%}{%- assign pagination = collection | paginate: 21 -%}<div class="blog_list-wrapper w-dyn-list">
+                  {%- unless pagination.length == 0 -%}<div role="list" class="blog_list w-dyn-items">
+                    {%- for item in pagination[0] -%}<div role="listitem" class="blog_item w-dyn-item">
                       <a href="{{ item.url }}" class="blog_card_component is-blue w-inline-block">
                         <div class="blog_card_wrapper">
                           <div class="blog_card_image-wrapper"><img alt="{{ images.0.alt | escape }}" loading="lazy" src="{{ item.data.f_thumbnail-image.url }}" class="blog_card_image"></div>
@@ -303,10 +302,40 @@ margin: 0rem !important;
                         </div>
                       </a>
                     </div>{%- endfor -%}
-                  </div>{%- endunless -%}
-                  {%- if collection.length == 0 -%}<div class="empty-state w-dyn-empty">
+                  {%- for paginationPage in pagination -%}{%- if forloop.index > 1 -%}{%- assign paginationFilePath = "/public/_data/paginations" | appendMultiple: page.filePathStem, "/page--72282f47-", forloop.index, ".html" -%}<template data-pagination-index="{{ forloop.index }}" data-pagination-url="{{ paginationFilePath | replace: "/public", "" }}">{% capture currentPageHTML %}{%- for item in paginationPage -%}<div role="listitem" class="blog_item w-dyn-item">
+                      <a href="{{ item.url }}" class="blog_card_component is-blue w-inline-block">
+                        <div class="blog_card_wrapper">
+                          <div class="blog_card_image-wrapper"><img alt="{{ images.0.alt | escape }}" loading="lazy" src="{{ item.data.f_thumbnail-image.url }}" class="blog_card_image"></div>
+                          <div class="blog_card_content">
+                            <div class="blog_card_block">
+                              <h3 class="blog_card_heading w-dyn-bind-empty">{{ item.data.title }}</h3>
+                              <p class="text-size-regular w-dyn-bind-empty">{{ item.data.f_post-summary }}</p>
+                            </div>
+                            <div class="learn-more_component">
+                              <div>{{ texts.-52bd880f }}</div>
+                              <div class="learn-more_arrow w-embed"><svg height="100%" viewBox="0 0 25 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M20.0384 0.218756L24.7817 4.97188C25.0728 5.26355 25.0728 5.73645 24.7817 6.02812L20.0384 10.7812C19.7473 11.0729 19.2754 11.0729 18.9843 10.7812C18.6932 10.4896 18.6932 10.0167 18.9843 9.72499L22.4552 6.24688L0 6.24688L0 4.75312L22.4552 4.75312L18.9843 1.27501C18.6932 0.98333 18.6932 0.510432 18.9843 0.218756C19.2754 -0.0729188 19.7473 -0.0729188 20.0384 0.218756Z" fill="currentcolor"></path>
+                                </svg></div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>{%- endfor -%}{% endcapture %}{{ currentPageHTML | writeToFile: paginationFilePath }}</template>{%- endif -%}{%- endfor -%}</div>{%- endunless -%}
+                  {%- if pagination.length == 0 -%}<div class="empty-state w-dyn-empty">
                     <div>{{ texts.3d503d2b }}</div>
                   </div>{%- endif -%}
+                  <div role="navigation" aria-label="List" class="w-pagination-wrapper pagination">
+                    <a href="{{ links.23 }}" aria-label="Previous Page" class="w-pagination-previous previous" style="display: none;"><svg class="w-pagination-previous-icon" height="12px" width="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" transform="translate(0, 1)">
+                        <path fill="none" stroke="currentColor" fill-rule="evenodd" d="M8 10L4 6l4-4"></path>
+                      </svg>
+                      <div class="w-inline-block">{{ texts.-4811e0e9 }}</div>
+                    </a>
+                    {%- if pagination[1] -%}<a href="{{ links.23 }}" aria-label="Next Page" class="w-pagination-next next">
+                      <div class="w-inline-block">{{ texts.24ff13 }}</div><svg class="w-pagination-next-icon" height="12px" width="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" transform="translate(0, 1)">
+                        <path fill="none" stroke="currentColor" fill-rule="evenodd" d="M4 2l4 4-4 4"></path>
+                      </svg>
+                    </a>{%- endif -%}
+                  </div>
                 </div>
               </div>
             </div>
@@ -335,7 +364,7 @@ margin: 0rem !important;
             <div data-w-id="79c5f90a-310a-57eb-c561-3883287bed03" class="footer_content-left">
               <a href="{{ links.95466e8 }}" target="_blank" class="footer_logo-link w-inline-block"><img src="{{ images.4e4f88d8.url }}" loading="lazy" sizes="(max-width: 479px) 150px, (max-width: 767px) 33vw, 250px" alt="{{ images.4e4f88d8.alt | escape }}" class="footer_logo"></a>
               <div class="padding-bottom padding-medium"></div>
-              <h3 class="text-color-white _1">{{ texts.30eaf868 }}<br>{{ texts.-6f3f756c }}<br>{{ texts.-2ee60df2 }}</h3>
+              <h3 class="text-color-white _1">{{ texts.6ea6727c }}</h3>
               <div class="padding-bottom padding-medium"></div>
               <div class="social_wrpaper">
                 <a aria-label="Facebook Link" id="w-node-_79c5f90a-310a-57eb-c561-3883287bed0c-287becff" href="{{ links.65d59981 }}" target="_blank" class="social_link w-inline-block">
@@ -384,9 +413,8 @@ margin: 0rem !important;
                 <div class="footer_links-col">
                   <h4 class="footer_title">{{ texts.-64104400 }}</h4>
                   <div class="padding-bottom padding-small"></div>
-                  <a href="{{ links.27c8b03 }}" class="footer_contact-number">{{ texts.1f4aab69 }}</a>
-                  <a href="{{ links.-46f1ca59 }}" class="footer_contact-email">{{ texts.-7b14882e }}</a>
-                  <a href="{{ links.-46f1ca59 }}" class="footer_contact-email">{{ texts.93051d1 }}</a>
+                  <a href="{{ links.6ec51d47 }}" class="footer_contact-number">{{ texts.-e896e01 }}</a>
+                  <a href="{{ links.4db356a5 }}" class="footer_contact-email">{{ texts.-7b146012 }}</a>
                 </div>
                 <div class="footer_subscribe-form hide">
                   <h4 class="footer_title">{{ texts.5fca156f }}</h4>

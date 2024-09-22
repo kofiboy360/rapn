@@ -87,6 +87,171 @@ collections:
             name: additional_tags
             widget: text
             required: false
+  - name: resources
+    label: Resources
+    folder: cms/resources
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: ''
+        name: title
+        label: Publication Name
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - label: Publication Description
+        name: body
+        widget: markdown
+        required: false
+      - hint: A summary of the blog post that appears on blog post grid
+        name: f_publication-summary
+        label: Publication Summary
+        widget: text
+        required: false
+      - hint: ''
+        name: f_main-image
+        label: Main Image
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: ''
+        name: f_featured
+        label: Featured?
+        widget: boolean
+        required: false
+        default: false
+      - hint: ''
+        name: f_publication-link
+        label: Publication Link
+        widget: string
+        required: false
+      - hint: ''
+        name: f_category
+        label: Category
+        widget: string
+        required: false
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: resources
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[resources].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_0
+    editor:
+      preview: false
+  - name: event
+    label: Events
+    folder: cms/event
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: ''
+        name: title
+        label: Name
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - label: Description
+        name: body
+        widget: markdown
+        required: false
+      - hint: ''
+        name: f_start-date-time
+        label: Start Date/Time
+        widget: datetime
+        required: false
+      - hint: ''
+        name: f_end-date-time
+        label: End Date/Time
+        widget: datetime
+        required: false
+      - hint: ''
+        name: f_location
+        label: Location
+        widget: string
+        required: false
+      - hint: Used on event lists
+        name: f_short-description
+        label: Short Description
+        widget: string
+        required: false
+      - hint: Enter event payment page link here
+        name: f_registeration-link
+        label: Registeration Link
+        widget: string
+        required: false
+      - hint: Eg. Event, Webinar or Workshop
+        name: f_event-type
+        label: Event Type
+        widget: string
+        required: false
+      - hint: 'Enter the just amount. Eg. 300, 500 '
+        name: f_price
+        label: Price
+        widget: string
+        required: false
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: event
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[event].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_0
+    editor:
+      preview: false
   - name: author
     label: Authors
     folder: cms/author
@@ -456,25 +621,177 @@ collections:
             label: Text
             name: 2268ff
             widget: string
-          - hint: 'Original text: About us, key: 645f0031'
+          - hint: 'Original text: Speakers, key: -7b61fb8c'
             label: Text
-            name: 645f0031
+            name: '-7b61fb8c'
             widget: string
-          - hint: 'Original text: Events, key: 7c6ccd39'
+          - hint: 'Original text: About Us, key: 645efc51'
             label: Text
-            name: 7c6ccd39
+            name: 645efc51
             widget: string
-          - hint: 'Original text: Resources, key: 13ede05'
+          - hint: 'Original text: Contact, key: -64104400'
             label: Text
-            name: 13ede05
+            name: '-64104400'
             widget: string
-          - hint: 'Original text: Blog, key: 1fa3c2'
+          - hint: 'Original text: Get started, key: 667a5d97'
             label: Text
-            name: 1fa3c2
+            name: 667a5d97
             widget: string
-          - hint: 'Original text: Contact us, key: 7f274abe'
+          - hint: 'Original text: Register, key: -25496d3d'
             label: Text
-            name: 7f274abe
+            name: '-25496d3d'
+            widget: string
+          - hint: 'Original text: Africa , key: 22fb0cc6'
+            label: Text
+            name: 22fb0cc6
+            widget: string
+          - hint: >-
+              Original text: Food Regulatory & Quality Assurance , key:
+              -4c177c6c
+            label: Text
+            name: '-4c177c6c'
+            widget: string
+          - hint: 'Original text: Conference, key: -5dcedec4'
+            label: Text
+            name: '-5dcedec4'
+            widget: string
+          - hint: >-
+              Original text: Future-proof your regulatory strategies & minimize
+              risk to your brand & consumers, key: 22e3d90b
+            label: Text
+            name: 22e3d90b
+            widget: string
+          - hint: 'Original text: Peninsula Golf Resort, Akosombo, key: -3689e3cf'
+            label: Text
+            name: '-3689e3cf'
+            widget: string
+          - hint: 'Original text: ‍, key: 200d'
+            label: Text
+            name: 200d
+            widget: string
+          - hint: 'Original text: September 18, 2024 &, key: -59af9e90'
+            label: Text
+            name: '-59af9e90'
+            widget: string
+          - hint: 'Original text: September 19, 2024, key: -685d14d5'
+            label: Text
+            name: '-685d14d5'
+            widget: string
+          - hint: 'Original text: Register Now, key: -5c16c827'
+            label: Text
+            name: '-5c16c827'
+            widget: string
+          - hint: 'Original text: Contact Us, key: 7f2746de'
+            label: Text
+            name: 7f2746de
+            widget: string
+          - hint: 'Original text: 99, key: 720'
+            label: Text
+            name: '720'
+            widget: string
+          - hint: 'Original text: %, key: 25'
+            label: Text
+            name: '25'
+            widget: string
+          - hint: 'Original text: hours of innovative content, key: -287123da'
+            label: Text
+            name: '-287123da'
+            widget: string
+          - hint: 'Original text: 10, key: 61f'
+            label: Text
+            name: 61f
+            widget: string
+          - hint: 'Original text: +, key: 2b'
+            label: Text
+            name: 2b
+            widget: string
+          - hint: 'Original text: hours of networking, key: -51f91674'
+            label: Text
+            name: '-51f91674'
+            widget: string
+          - hint: 'Original text: Top industry Speakers, key: -185b99b5'
+            label: Text
+            name: '-185b99b5'
+            widget: string
+          - hint: 'Original text: 97, key: 71e'
+            label: Text
+            name: 71e
+            widget: string
+          - hint: 'Original text: Attendee Satisfaction Assured, key: -512e11'
+            label: Text
+            name: '-512e11'
+            widget: string
+          - hint: >-
+              Original text: FUTURE-PROOF YOUR REGULATORY STRATEGIES & MINIMIZE
+              RISK TO YOUR BRAND & CONSUMERS, key: 33b34d0b
+            label: Text
+            name: 33b34d0b
+            widget: string
+          - hint: >-
+              Original text: The Annual Africa Food Regulatory & Quality
+              Assurance Conference is here with industry leading legal,
+              regulatory, quality assurance, and compliance experts from across
+              Africa and beyond. , key: 4891e671
+            label: Text
+            name: '4891e671'
+            widget: text
+          - hint: >-
+              Original text: Connect with regulatory, compliance, and legal
+              thought leaders from food & beverage producers, retailers,
+              manufacturers, ingredient suppliers, packaging companies, and food
+              services. , key: -6c1e3138
+            label: Text
+            name: '-6c1e3138'
+            widget: text
+          - hint: "Original text: Join experts from the Food and Drugs Authority Ghana, \_Ghana Standards Authority, The Coca-Cola Company, \_African Continental Free Trade Area (AfCFTA) Secretariat,\_National Agency for Food and Drug Administration and Control (NAFDAC) STANDARDS ORGANISATION OF NIGERIA Olam Council for Scientific and Industrial Research (CSIR) and many more!, key: -3b58aa4d"
+            label: Text
+            name: '-3b58aa4d'
+            widget: text
+          - hint: 'Original text: Secure your spot today and:, key: 55bff9c'
+            label: Text
+            name: 55bff9c
+            widget: string
+          - hint: >-
+              Original text: - Nail down the latest modernization of regulations
+              and enforcement priorities., key: 21adae01
+            label: Text
+            name: 21adae01
+            widget: string
+          - hint: >-
+              Original text: -Optimize your knowledge of national and
+              cross-jurisdictional regulatory requirements., key: -3292c2aa
+            label: Text
+            name: '-3292c2aa'
+            widget: string
+          - hint: >-
+              Original text: -Apply real-world solutions to protect your
+              consumers and brand reputation., key: 5771595
+            label: Text
+            name: '5771595'
+            widget: string
+          - hint: >-
+              Original text: -Leave inspired with best practices from 30+
+              regulators and food industry leaders., key: -642617e3
+            label: Text
+            name: '-642617e3'
+            widget: string
+          - hint: "Original text: If you are involved in: Regulation, Compliance, QA, Safety, Supply Chain, Legal, Litigation, Risk Management, Government & Corporate Affairs, and/or Licensing, this conference \_is for you!, key: -6de175d2"
+            label: Text
+            name: '-6de175d2'
+            widget: text
+          - hint: "Original text: This is an in-person event featuring interactive sessions, curated breakout learning, and face-to-face networking opportunities. The conference will also be streamed virtually for attendees that can’t make\_it\_in\_person., key: 43bdc2a3"
+            label: Text
+            name: 43bdc2a3
+            widget: text
+          - hint: >-
+              Original text: Companies that are attending the conference, key:
+              -1008ccbd
+            label: Text
+            name: '-1008ccbd'
+            widget: string
+          - hint: 'Original text: Click to Register, key: -1887dbf0'
+            label: Text
+            name: '-1887dbf0'
             widget: string
           - hint: 'Original text: Regulatory Affairs , key: 55bebd1e'
             label: Text
@@ -496,10 +813,6 @@ collections:
             label: Text
             name: 6b492c9d
             widget: string
-          - hint: 'Original text: Contact Us, key: 7f2746de'
-            label: Text
-            name: 7f2746de
-            widget: string
           - hint: 'Original text: About , key: 74843a53'
             label: Text
             name: 74843a53
@@ -520,6 +833,10 @@ collections:
           - hint: 'Original text: Read More..., key: 58f5266f'
             label: Text
             name: 58f5266f
+            widget: string
+          - hint: 'Original text: Resources, key: 13ede05'
+            label: Text
+            name: 13ede05
             widget: string
           - hint: 'Original text: Our Mission, key: 3dba0078'
             label: Text
@@ -607,6 +924,10 @@ collections:
             label: Text
             name: 4b0951a6
             widget: string
+          - hint: 'Original text: Events, key: 7c6ccd39'
+            label: Text
+            name: 7c6ccd39
+            widget: string
           - hint: 'Original text: Webinars, key: -266e5397'
             label: Text
             name: '-266e5397'
@@ -615,78 +936,27 @@ collections:
             label: Text
             name: '-46796054'
             widget: string
-          - hint: 'Original text: 2nd September, 2024, key: -39fe9e53'
+          - hint: >-
+              Original text: There are currently no upcoming events. Once we
+              have any event, it will show up here., key: 456473fc
             label: Text
-            name: '-39fe9e53'
-            widget: string
-          - hint: 'Original text: Seminar for professionals 2024, key: 3f31d05a'
-            label: Text
-            name: 3f31d05a
+            name: 456473fc
             widget: string
           - hint: >-
-              Original text: Accra International Conference Centre, key:
-              -57dd01a3
+              Original text: There are currently no upcoming Webinars. Once we
+              have any webinar, it will show up here., key: -535fda24
             label: Text
-            name: '-57dd01a3'
-            widget: string
-          - hint: 'Original text: Event, key: 403827a'
-            label: Text
-            name: 403827a
+            name: '-535fda24'
             widget: string
           - hint: >-
-              Original text: Join industry leaders and experts at the Seminar
-              for Professionals 2024, a premier event designed to empower and
-              inspire professionals across various fields. This seminar will
-              provide valuable insights into the latest trends, best practices,
-              and innovative strategies to excel in your career. , key: -573ca68
+              Original text: There are currently no upcoming Workshops. Once we
+              have any Workshop, it will show up here., key: 467cb186
             label: Text
-            name: '-573ca68'
+            name: 467cb186
             widget: text
-          - hint: 'Original text: Register, key: -25496d3d'
+          - hint: 'Original text: View All Events, key: -62bf230d'
             label: Text
-            name: '-25496d3d'
-            widget: string
-          - hint: 'Original text: 29th September, 2024, key: -7ea74ec0'
-            label: Text
-            name: '-7ea74ec0'
-            widget: string
-          - hint: 'Original text: Webinar, key: -53d202b6'
-            label: Text
-            name: '-53d202b6'
-            widget: string
-          - hint: >-
-              Original text: Network with peers, engage in thought-provoking
-              discussions, and gain actionable knowledge to stay ahead in a
-              competitive landscape. Don't miss this opportunity to elevate your
-              professional journey!, key: -405172cf
-            label: Text
-            name: '-405172cf'
-            widget: text
-          - hint: 'Original text: 4th October, 2024, key: -196fc944'
-            label: Text
-            name: '-196fc944'
-            widget: string
-          - hint: 'Original text: Workshop, key: 5fc15a7'
-            label: Text
-            name: 5fc15a7
-            widget: string
-          - hint: >-
-              Original text: This seminar will provide valuable insights into
-              the latest trends, best practices, and innovative strategies to
-              excel in your career. Network with peers, engage in
-              thought-provoking discussions, and gain actionable knowledge to
-              stay ahead in a competitive landscape. Don't miss this opportunity
-              to elevate your professional journey!, key: 30ad2c61
-            label: Text
-            name: 30ad2c61
-            widget: text
-          - hint: 'Original text: 3rd December, 2024, key: -25962b2c'
-            label: Text
-            name: '-25962b2c'
-            widget: string
-          - hint: 'Original text: About Us, key: 645efc51'
-            label: Text
-            name: 645efc51
+            name: '-62bf230d'
             widget: string
           - hint: >-
               Original text: Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -765,39 +1035,45 @@ collections:
             label: Text
             name: 16f813c4
             widget: string
-          - hint: 'Original text: Career, key: 77e0f39e'
+          - hint: 'Original text: Publications, key: 4183f7e7'
             label: Text
-            name: 77e0f39e
+            name: 4183f7e7
             widget: string
-          - hint: 'Original text: Medicine, key: -31d545a6'
+          - hint: 'Original text: Regulatory Updates, key: -7ff844be'
             label: Text
-            name: '-31d545a6'
+            name: '-7ff844be'
             widget: string
           - hint: 'Original text: Guidelines, key: 7b6c6da3'
             label: Text
             name: 7b6c6da3
             widget: string
-          - hint: 'Original text: Future of Career Paths, key: 4d2dd138'
-            label: Text
-            name: 4d2dd138
-            widget: string
-          - hint: >-
-              Original text: How do you create compelling presentations that wow
-              your colleagues and impress your managers?, key: 11e4f2c2
-            label: Text
-            name: 11e4f2c2
-            widget: text
           - hint: 'Original text: Read post, key: 319adcca'
             label: Text
             name: 319adcca
             widget: string
-          - hint: 'Original text: Migrating to Health Fields 101, key: 3cc38f82'
+          - hint: >-
+              Original text: Sorry, there are no resources available yet. Once
+              there is, it will show up here, key: 48b14e62
             label: Text
-            name: 3cc38f82
+            name: 48b14e62
             widget: string
-          - hint: 'Original text: Building your Career, key: -4990df21'
+          - hint: >-
+              Original text: Sorry, there are no Publication resources available
+              yet. Once there is, it will show up here, key: -5d29f90a
             label: Text
-            name: '-4990df21'
+            name: '-5d29f90a'
+            widget: text
+          - hint: >-
+              Original text: Sorry, there are no Regulatory Update resources
+              available yet. Once there is, it will show up here, key: 2f53a351
+            label: Text
+            name: 2f53a351
+            widget: text
+          - hint: >-
+              Original text: Sorry, there are no guideline resources available
+              yet. Once there is, it will show up here, key: 20b64012
+            label: Text
+            name: 20b64012
             widget: string
           - hint: 'Original text: Go to Library, key: 7d2d960e'
             label: Text
@@ -811,37 +1087,25 @@ collections:
             label: Text
             name: 3d503d2b
             widget: string
-          - hint: 'Original text: Regulatory , key: 30eaf868'
+          - hint: "Original text: Regulatory affairs professionals\_network, key: 6ea6727c"
             label: Text
-            name: 30eaf868
-            widget: string
-          - hint: 'Original text: Professionals , key: -6f3f756c'
-            label: Text
-            name: '-6f3f756c'
-            widget: string
-          - hint: 'Original text: Network, key: -2ee60df2'
-            label: Text
-            name: '-2ee60df2'
+            name: 6ea6727c
             widget: string
           - hint: 'Original text: Company, key: -64202ba3'
             label: Text
             name: '-64202ba3'
             widget: string
-          - hint: 'Original text: Contact, key: -64104400'
+          - hint: 'Original text: Blog, key: 1fa3c2'
             label: Text
-            name: '-64104400'
+            name: 1fa3c2
             widget: string
-          - hint: 'Original text: +233-557-0007-960, key: 1f4aab69'
+          - hint: "Original text: \_+233-201-329-873 , key: -e896e01"
             label: Text
-            name: 1f4aab69
+            name: '-e896e01'
             widget: string
-          - hint: 'Original text: info@rapn.com, key: -7b14882e'
+          - hint: 'Original text: info@rapn.net, key: -7b146012'
             label: Text
-            name: '-7b14882e'
-            widget: string
-          - hint: 'Original text: support@rapn.com, key: 93051d1'
-            label: Text
-            name: 93051d1
+            name: '-7b146012'
             widget: string
           - hint: 'Original text: Join Newsletter, key: 5fca156f'
             label: Text
@@ -898,6 +1162,14 @@ collections:
           - hint: 'Original text: Go Home, key: 6b29b517'
             label: Text
             name: 6b29b517
+            widget: string
+          - hint: 'Original text: About us, key: 645f0031'
+            label: Text
+            name: 645f0031
+            widget: string
+          - hint: 'Original text: Contact us, key: 7f274abe'
+            label: Text
+            name: 7f274abe
             widget: string
           - hint: >-
               Original text: Empowering Regulatory Professionals Worldwide:
@@ -1059,17 +1331,13 @@ collections:
             label: Text
             name: 4b6bc54
             widget: string
-          - hint: 'Original text: Design, key: 79ceadde'
+          - hint: 'Original text: Previous, key: -4811e0e9'
             label: Text
-            name: 79ceadde
+            name: '-4811e0e9'
             widget: string
-          - hint: 'Original text: 8 min read, key: -5c659a74'
+          - hint: 'Original text: Next, key: 24ff13'
             label: Text
-            name: '-5c659a74'
-            widget: string
-          - hint: 'Original text: Product, key: 50c664cf'
-            label: Text
-            name: 50c664cf
+            name: 24ff13
             widget: string
           - hint: >-
               Original text: Have a question ? Get in touch with us., key:
@@ -1095,17 +1363,35 @@ collections:
             label: Text
             name: '-68a27650'
             widget: string
-          - hint: 'Original text: +233-557-007-960, key: 11e4cf21'
+          - hint: 'Original text: +233-201-329-873, key: -499a8a5f'
             label: Text
-            name: 11e4cf21
+            name: '-499a8a5f'
             widget: string
-          - hint: 'Original text: Job Description, key: 299377d9'
+          - hint: 'Original text: Heading, key: -6d5fea1e'
             label: Text
-            name: 299377d9
+            name: '-6d5fea1e'
             widget: string
-          - hint: 'Original text: Salary, key: -6cd44a16'
+          - hint: "Original text: Start &\_end Date, key: f26edcb"
             label: Text
-            name: '-6cd44a16'
+            name: f26edcb
+            widget: string
+          - hint: >-
+              Original text: Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Suspendisse varius enim in eros elementum tristique. Duis
+              cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+              commodo diam libero vitae erat. Aenean faucibus nibh et justo
+              cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus
+              tristique posuere., key: -5286fc08
+            label: Text
+            name: '-5286fc08'
+            widget: text
+          - hint: 'Original text: Price:, key: -71049bcf'
+            label: Text
+            name: '-71049bcf'
+            widget: string
+          - hint: 'Original text: GHS 500, key: 2b585367'
+            label: Text
+            name: 2b585367
             widget: string
           - hint: 'Original text: Details, key: -3fee75de'
             label: Text
@@ -1119,6 +1405,96 @@ collections:
             label: Text
             name: '-697be8b4'
             widget: string
+          - hint: 'Original text: Heading 1, key: 6af22973'
+            label: Text
+            name: 6af22973
+            widget: string
+          - hint: 'Original text: Heading 2, key: 6af22974'
+            label: Text
+            name: 6af22974
+            widget: string
+          - hint: 'Original text: Heading 3, key: 6af22975'
+            label: Text
+            name: 6af22975
+            widget: string
+          - hint: 'Original text: Heading 4, key: 6af22976'
+            label: Text
+            name: 6af22976
+            widget: string
+          - hint: 'Original text: Heading 5, key: 6af22977'
+            label: Text
+            name: 6af22977
+            widget: string
+          - hint: 'Original text: Heading 6, key: 6af22978'
+            label: Text
+            name: 6af22978
+            widget: string
+          - hint: >-
+              Original text: Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+              dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur., key: 36f186d6
+            label: Text
+            name: 36f186d6
+            widget: text
+          - hint: 'Original text: Block quote, key: 40f76109'
+            label: Text
+            name: 40f76109
+            widget: string
+          - hint: 'Original text: Ordered list, key: 670f3891'
+            label: Text
+            name: 670f3891
+            widget: string
+          - hint: 'Original text: Item 1, key: -7cdc0d7c'
+            label: Text
+            name: '-7cdc0d7c'
+            widget: string
+          - hint: 'Original text: Item 2, key: -7cdc0d7b'
+            label: Text
+            name: '-7cdc0d7b'
+            widget: string
+          - hint: 'Original text: Item 3, key: -7cdc0d7a'
+            label: Text
+            name: '-7cdc0d7a'
+            widget: string
+          - hint: 'Original text: Unordered list, key: -27cb5e56'
+            label: Text
+            name: '-27cb5e56'
+            widget: string
+          - hint: 'Original text: Item A, key: -7cdc0d6c'
+            label: Text
+            name: '-7cdc0d6c'
+            widget: string
+          - hint: 'Original text: Item B, key: -7cdc0d6b'
+            label: Text
+            name: '-7cdc0d6b'
+            widget: string
+          - hint: 'Original text: Item C, key: -7cdc0d6a'
+            label: Text
+            name: '-7cdc0d6a'
+            widget: string
+          - hint: 'Original text: Text link, key: 361eaeed'
+            label: Text
+            name: 361eaeed
+            widget: string
+          - hint: 'Original text: Bold text, key: 4205e5c8'
+            label: Text
+            name: 4205e5c8
+            widget: string
+          - hint: 'Original text: Emphasis, key: 4abe799c'
+            label: Text
+            name: 4abe799c
+            widget: string
+          - hint: 'Original text: Superscript, key: 1dea1fe6'
+            label: Text
+            name: 1dea1fe6
+            widget: string
+          - hint: 'Original text: Subscript, key: -69de0115'
+            label: Text
+            name: '-69de0115'
+            widget: string
           - hint: 'Original text: Apply Now, key: -45e051c'
             label: Text
             name: '-45e051c'
@@ -1126,10 +1502,6 @@ collections:
           - hint: 'Original text: Last modification: 1/8/2021, key: 2b0e947e'
             label: Text
             name: 2b0e947e
-            widget: string
-          - hint: 'Original text: ‍, key: 200d'
-            label: Text
-            name: 200d
             widget: string
           - hint: >-
               Original text: Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -1212,6 +1584,150 @@ collections:
             label: Text
             name: 68729b30
             widget: text
+          - hint: "Original text: Start &\_end Date:, key: -2a493431"
+            label: Text
+            name: '-2a493431'
+            widget: string
+          - hint: 'Original text: -, key: 2d'
+            label: Text
+            name: 2d
+            widget: string
+          - hint: 'Original text: $, key: 24'
+            label: Text
+            name: '24'
+            widget: string
+          - hint: 'Original text: register, key: -2923d15d'
+            label: Text
+            name: '-2923d15d'
+            widget: string
+          - hint: 'Original text: Register Now!, key: -26c23c98'
+            label: Text
+            name: '-26c23c98'
+            widget: string
+          - hint: 'Original text: Click here to register, key: -339e69d0'
+            label: Text
+            name: '-339e69d0'
+            widget: string
+          - hint: 'Original text: You may also like.., key: -30fc0a4c'
+            label: Text
+            name: '-30fc0a4c'
+            widget: string
+          - hint: >-
+              Original text: Dive into What’s Happening Next. Uncover Additional
+              Opportunities and Insights., key: 76eafb77
+            label: Text
+            name: 76eafb77
+            widget: string
+          - hint: 'Original text: Read Publication, key: -72241d5e'
+            label: Text
+            name: '-72241d5e'
+            widget: string
+          - hint: >-
+              Original text: Below are the speakers for the Africa Food
+              Regulatory & Quality Assurance Conference, key: -6771cff2
+            label: Text
+            name: '-6771cff2'
+            widget: string
+          - hint: 'Original text:  Dr. Aina Stephen, key: -7c2f3f80'
+            label: Text
+            name: '-7c2f3f80'
+            widget: string
+          - hint: 'Original text:  Olugbenga, key: -23dd6a'
+            label: Text
+            name: '-23dd6a'
+            widget: string
+          - hint: >-
+              Original text: Deputy Director -National Agency for Food and Drug
+              Administration andControl (NAFDAC), key: -7b980d33
+            label: Text
+            name: '-7b980d33'
+            widget: string
+          - hint: 'Original text: Prof. Alex Dodoo, key: d000d82'
+            label: Text
+            name: d000d82
+            widget: string
+          - hint: >-
+              Original text: Executive Director Ghana Standards Authority
+              President- African Organization for Standards, key: -779be25f
+            label: Text
+            name: '-779be25f'
+            widget: string
+          - hint: 'Original text: Dr. Delese M. Darko, key: 4504214e'
+            label: Text
+            name: 4504214e
+            widget: string
+          - hint: >-
+              Original text: Chief Executive Officer -Food and Drugs
+              Authority,Ghana, key: 7013ae22
+            label: Text
+            name: 7013ae22
+            widget: string
+          - hint: 'Original text: Wamkele Mene, key: -e0de47'
+            label: Text
+            name: '-e0de47'
+            widget: string
+          - hint: 'Original text: Secretary-General AFCFTA, key: -5b89f91e'
+            label: Text
+            name: '-5b89f91e'
+            widget: string
+          - hint: 'Original text: Prof. Charles Tortoe, key: -3ffa3ae6'
+            label: Text
+            name: '-3ffa3ae6'
+            widget: string
+          - hint: >-
+              Original text: AG. Executive Director Food Research Institute,
+              key: -497b6412
+            label: Text
+            name: '-497b6412'
+            widget: string
+          - hint: 'Original text: Joseph Yaw-Bernie Bennie, key: -77b927eb'
+            label: Text
+            name: '-77b927eb'
+            widget: string
+          - hint: >-
+              Original text: Director-Legal & Corporate Affairs Food & Drugs
+              Authority, Ghana, key: -1e9b4b4e
+            label: Text
+            name: '-1e9b4b4e'
+            widget: string
+          - hint: 'Original text: Roderick Daddey-Adjei, key: -20d8f44e'
+            label: Text
+            name: '-20d8f44e'
+            widget: string
+          - hint: >-
+              Original text: Deputy CEO- Food Division Food & Drugs Authority,
+              Ghana, key: 1bcdb989
+            label: Text
+            name: 1bcdb989
+            widget: string
+          - hint: 'Original text: Prashant Thakhur, key: -4ba0846'
+            label: Text
+            name: '-4ba0846'
+            widget: string
+          - hint: 'Original text: Vice President-Olam International, key: -332c4f71'
+            label: Text
+            name: '-332c4f71'
+            widget: string
+          - hint: 'Original text: Yunusa Mohammed, key: 58d0caa9'
+            label: Text
+            name: 58d0caa9
+            widget: string
+          - hint: >-
+              Original text: Deputy Director-Standards Organization of Nigeria,
+              key: 3730331f
+            label: Text
+            name: 3730331f
+            widget: string
+          - hint: 'Original text: Julia Kiage-Otaya, key: 45fd0891'
+            label: Text
+            name: 45fd0891
+            widget: string
+          - hint: >-
+              Original text: Senior Director-Scientific and Regulatory Affairs
+              Coca Cola Company, key: 6b07625
+            label: Text
+            name: 6b07625
+            widget: string
       - label: Links
         name: links
         file: cms/_data/links.json
@@ -1224,21 +1740,13 @@ collections:
             label: Link
             name: 2f
             widget: string
+          - hint: 'Original link: /speakers/, key: 712c2f0c'
+            label: Link
+            name: 712c2f0c
+            widget: string
           - hint: 'Original link: /about-us/, key: -766f6c3e'
             label: Link
             name: '-766f6c3e'
-            widget: string
-          - hint: 'Original link: /events/, key: -3fb480d9'
-            label: Link
-            name: '-3fb480d9'
-            widget: string
-          - hint: 'Original link: /resources/, key: 5c7d819'
-            label: Link
-            name: 5c7d819
-            widget: string
-          - hint: 'Original link: /blogs/, key: 63a5be2d'
-            label: Link
-            name: 63a5be2d
             widget: string
           - hint: 'Original link: /contact-us/, key: 6bfbaa95'
             label: Link
@@ -1247,6 +1755,18 @@ collections:
           - hint: 'Original link: #, key: 23'
             label: Link
             name: '23'
+            widget: string
+          - hint: 'Original link: https://tally.so/r/nWYeee, key: 6f526814'
+            label: Link
+            name: 6f526814
+            widget: string
+          - hint: 'Original link: /events/, key: -3fb480d9'
+            label: Link
+            name: '-3fb480d9'
+            widget: string
+          - hint: 'Original link: /resources/, key: 5c7d819'
+            label: Link
+            name: 5c7d819
             widget: string
           - hint: 'Original link: /services#service1, key: 51cd3a52'
             label: Link
@@ -1284,15 +1804,19 @@ collections:
             label: Link
             name: '-7ff2c147'
             widget: string
-          - hint: 'Original link: tel:+(123)456-7890, key: 27c8b03'
+          - hint: 'Original link: /blogs/, key: 63a5be2d'
             label: Link
-            name: 27c8b03
+            name: 63a5be2d
+            widget: string
+          - hint: 'Original link: tel:+233201329873, key: 6ec51d47'
+            label: Link
+            name: 6ec51d47
             widget: string
           - hint: >-
-              Original link: mailto:info@fin.sweet?subject=info%40fin.sweet,
-              key: -46f1ca59
+              Original link: mailto:info@rapn.net?subject=info%40rapn.net, key:
+              4db356a5
             label: Link
-            name: '-46f1ca59'
+            name: 4db356a5
             widget: string
           - hint: 'Original link: https://ymlktechnologies.com, key: -7ffb68e1'
             label: Link
@@ -1301,6 +1825,13 @@ collections:
           - hint: 'Original link: /privacy-policy/, key: -2f934417'
             label: Link
             name: '-2f934417'
+            widget: string
+          - hint: >-
+              Original link:
+              https://university.webflow.com/lesson/add-and-nest-text-links-in-webflow,
+              key: -1a691619
+            label: Link
+            name: '-1a691619'
             widget: string
       - label: Images
         name: images
@@ -1337,7 +1868,176 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: 5eba3643
+            name: '-37b43fab'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 29403b8d
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-4b76d944'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-3d5bd0a0'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-3c9be952'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-2d950473'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 474fc35
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 677b4bcc
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 39027d66
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-7791eab3'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 27f6e879
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-2f854dae'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 38c582e1
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 437452da
             widget: object
             fields:
               - name: url
@@ -1402,7 +2102,7 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: 297a94d2
+            name: 48f9cd8a
             widget: object
             fields:
               - name: url
@@ -1493,32 +2193,6 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: 44b0105a
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: '-7d6df949'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
             name: '0'
             widget: object
             fields:
@@ -1546,6 +2220,19 @@ collections:
                 required: false
           - label: Image
             name: '-2b1beb3c'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 5eba3643
             widget: object
             fields:
               - name: url
@@ -1624,6 +2311,149 @@ collections:
                 required: false
           - label: Image
             name: '53685977'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 44b0105a
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-7f77bde2'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-7f69a661'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-7f5b8ee0'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-7aae1e3c'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: c90d86f
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 3be4114d
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 7f19df04
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-7f93ece4'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 318cbb91
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-7f85d563'
             widget: object
             fields:
               - name: url

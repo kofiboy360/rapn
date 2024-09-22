@@ -2,15 +2,12 @@
 f_job-type: Full Time
 f_job-role: Dubai
 title: Full Stack Developer
-f_job-description: |-
-  Remote, India , 4 to 5 Years Of Experience
-  Department: Website Design
-  5 Positions Available.
+f_job-description: March, 24th 2024 - august, 24th 2025
 slug: full-stack-developer
-updated-on: '2021-08-05T19:53:02.895Z'
+updated-on: '2024-08-28T14:02:22.274Z'
 created-on: '2021-07-17T12:17:05.848Z'
-published-on: '2024-08-23T13:42:04.406Z'
-f_salary-2: $30000 Per Anum
+published-on: '2024-08-28T14:48:11.896Z'
+f_salary-2: GHS 550
 f_job-requirement: >-
   Design & Create highly engaging industry-related content in both photo, gif &
   video format  
