@@ -1,1 +1,24 @@
-{"23":"#","2f":"/","712c2f0c":"/speakers/","-766f6c3e":"/about-us/","6bfbaa95":"/contact-us/","6f526814":"https://tally.so/r/nWYeee","-3fb480d9":"/events/","5c7d819":"/resources/","51cd3a52":"/services#service1","51cd3a53":"/services#service2","51cd3a54":"/services#service3","95466e8":"https://finsweet.com/","65d59981":"https://www.facebook.com/thatsfinsweet","-7f71aabc":"https://www.youtube.com/finsweet","-65098d52":"https://www.instagram.com/thatsfinsweet/","-7ff2c147":"https://twitter.com/thatsfinsweet","63a5be2d":"/blogs/","6ec51d47":"tel:+233201329873","4db356a5":"mailto:info@rapn.net?subject=info%40rapn.net","-7ffb68e1":"https://ymlktechnologies.com","-2f934417":"/privacy-policy/","-1a691619":"https://university.webflow.com/lesson/add-and-nest-text-links-in-webflow"}
+{
+  "23": "#",
+  "2f": "/",
+  "712c2f0c": "/speakers/",
+  "-766f6c3e": "/about-us/",
+  "6bfbaa95": "/contact-us/",
+  "6f526814": "https://tally.so/r/nWYeee",
+  "-3fb480d9": "/events/",
+  "5c7d819": "/resources/",
+  "51cd3a52": "/services#service1",
+  "51cd3a53": "/services#service2",
+  "51cd3a54": "/services#service3",
+  "95466e8": "https://finsweet.com/",
+  "65d59981": "https://www.facebook.com/thatsfinsweet",
+  "-7f71aabc": "https://www.youtube.com/finsweet",
+  "-65098d52": "https://www.instagram.com/thatsfinsweet/",
+  "-7ff2c147": "https://twitter.com/thatsfinsweet",
+  "63a5be2d": "/blogs/",
+  "6ec51d47": "tel:+233201329873",
+  "4db356a5": "mailto:info@rapn.net?subject=info%40rapn.net",
+  "-7ffb68e1": "https://ymlktechnologies.com",
+  "-2f934417": "/privacy-policy/",
+  "-1a691619": "https://university.webflow.com/lesson/add-and-nest-text-links-in-webflow"
+}
