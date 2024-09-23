@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html data-wf-page="66cf5c702397cf8602475c43" data-wf-site="66c890167ca4688e94a34c42"><head><link rel="preconnect" crossorigin="true" href="https://assets.website-files.com">
   <meta charset="utf-8">
-  <title>Regulatory Affairs Professionals Network</title>
+  <title>{{ title }} | Regulatory Affairs Professionals Network (RAPN)</title>
+  <meta content="{{ f_publication-summary | escape }} | Regulatory Affairs Professionals Network (RAPN)" name="description">
+  <meta content="{{ title }} | Regulatory Affairs Professionals Network (RAPN)" property="og:title">
+  <meta content="{{ f_publication-summary | escape }} | Regulatory Affairs Professionals Network (RAPN)" property="og:description">
+  <meta content="{{ f_main-image.url | escape }}" property="og:image">
+  <meta content="{{ title }} | Regulatory Affairs Professionals Network (RAPN)" property="twitter:title">
+  <meta content="{{ f_publication-summary | escape }} | Regulatory Affairs Professionals Network (RAPN)" property="twitter:description">
+  <meta content="{{ f_main-image.url | escape }}" property="twitter:image">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="/assets/css/normalize.css" rel="stylesheet" type="text/css">
   <link href="/assets/css/webflow.css" rel="stylesheet" type="text/css">
@@ -19,7 +28,7 @@
   -moz-osx-font-smoothing: grayscale;
 }  
 </style>
-{{ settings.site.header_additional_content }}{%- include "partials/_site-css-variables" -%}<meta property="og:title" content="Regulatory Affairs Professionals Network"><meta property="twitter:title" content="Regulatory Affairs Professionals Network"><style>.w-video.w-embed {
+{{ settings.site.header_additional_content }}{%- include "partials/_site-css-variables" -%}<style>.w-video.w-embed {
             aspect-ratio: 16 / 9;
         }</style></head>
 <body>
