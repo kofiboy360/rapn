@@ -668,12 +668,12 @@ figcaption {
   color: #fff;
 }
 
-.section_header {
+.hero-section_header {
   background-color: var(--light-blue);
   overflow: hidden;
 }
 
-.section_header._1 {
+.hero-section_header._1 {
   background-color: var(--untitled-ui--white);
 }
 

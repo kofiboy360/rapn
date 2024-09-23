@@ -621,6 +621,50 @@ collections:
             label: Text
             name: 2268ff
             widget: string
+          - hint: 'Original text: About us, key: 645f0031'
+            label: Text
+            name: 645f0031
+            widget: string
+          - hint: 'Original text: Events, key: 7c6ccd39'
+            label: Text
+            name: 7c6ccd39
+            widget: string
+          - hint: 'Original text: Resources, key: 13ede05'
+            label: Text
+            name: 13ede05
+            widget: string
+          - hint: 'Original text: Blog, key: 1fa3c2'
+            label: Text
+            name: 1fa3c2
+            widget: string
+          - hint: 'Original text: Contact us, key: 7f274abe'
+            label: Text
+            name: 7f274abe
+            widget: string
+          - hint: 'Original text: Regulatory Affairs , key: 55bebd1e'
+            label: Text
+            name: 55bebd1e
+            widget: string
+          - hint: 'Original text: Professionals Network , key: -41b4f99a'
+            label: Text
+            name: '-41b4f99a'
+            widget: string
+          - hint: 'Original text: (RAPN), key: 48e42234'
+            label: Text
+            name: '48e42234'
+            widget: string
+          - hint: "Original text: Developing and sustaining a competent regulatory workforce that drives good regulatory practice and policy to advance\_public\_health, key: 363aac12"
+            label: Text
+            name: 363aac12
+            widget: text
+          - hint: 'Original text: Upcoming Events, key: 6b492c9d'
+            label: Text
+            name: 6b492c9d
+            widget: string
+          - hint: 'Original text: Contact Us, key: 7f2746de'
+            label: Text
+            name: 7f2746de
+            widget: string
           - hint: 'Original text: Speakers, key: -7b61fb8c'
             label: Text
             name: '-7b61fb8c'
@@ -680,10 +724,6 @@ collections:
           - hint: 'Original text: Register Now, key: -5c16c827'
             label: Text
             name: '-5c16c827'
-            widget: string
-          - hint: 'Original text: Contact Us, key: 7f2746de'
-            label: Text
-            name: 7f2746de
             widget: string
           - hint: 'Original text: 99, key: 720'
             label: Text
@@ -793,26 +833,6 @@ collections:
             label: Text
             name: '-1887dbf0'
             widget: string
-          - hint: 'Original text: Regulatory Affairs , key: 55bebd1e'
-            label: Text
-            name: 55bebd1e
-            widget: string
-          - hint: 'Original text: Professionals Network , key: -41b4f99a'
-            label: Text
-            name: '-41b4f99a'
-            widget: string
-          - hint: 'Original text: (RAPN), key: 48e42234'
-            label: Text
-            name: '48e42234'
-            widget: string
-          - hint: "Original text: Developing and sustaining a competent regulatory workforce that drives good regulatory practice and policy to advance\_public\_health, key: 363aac12"
-            label: Text
-            name: 363aac12
-            widget: text
-          - hint: 'Original text: Upcoming Events, key: 6b492c9d'
-            label: Text
-            name: 6b492c9d
-            widget: string
           - hint: 'Original text: About , key: 74843a53'
             label: Text
             name: 74843a53
@@ -833,10 +853,6 @@ collections:
           - hint: 'Original text: Read More..., key: 58f5266f'
             label: Text
             name: 58f5266f
-            widget: string
-          - hint: 'Original text: Resources, key: 13ede05'
-            label: Text
-            name: 13ede05
             widget: string
           - hint: 'Original text: Our Mission, key: 3dba0078'
             label: Text
@@ -923,10 +939,6 @@ collections:
           - hint: 'Original text: View All, key: 4b0951a6'
             label: Text
             name: 4b0951a6
-            widget: string
-          - hint: 'Original text: Events, key: 7c6ccd39'
-            label: Text
-            name: 7c6ccd39
             widget: string
           - hint: 'Original text: Webinars, key: -266e5397'
             label: Text
@@ -1095,10 +1107,6 @@ collections:
             label: Text
             name: '-64202ba3'
             widget: string
-          - hint: 'Original text: Blog, key: 1fa3c2'
-            label: Text
-            name: 1fa3c2
-            widget: string
           - hint: "Original text: \_+233-201-329-873 , key: -e896e01"
             label: Text
             name: '-e896e01'
@@ -1162,14 +1170,6 @@ collections:
           - hint: 'Original text: Go Home, key: 6b29b517'
             label: Text
             name: 6b29b517
-            widget: string
-          - hint: 'Original text: About us, key: 645f0031'
-            label: Text
-            name: 645f0031
-            widget: string
-          - hint: 'Original text: Contact us, key: 7f274abe'
-            label: Text
-            name: 7f274abe
             widget: string
           - hint: >-
               Original text: Empowering Regulatory Professionals Worldwide:
@@ -1740,25 +1740,9 @@ collections:
             label: Link
             name: 2f
             widget: string
-          - hint: 'Original link: /speakers/, key: 712c2f0c'
-            label: Link
-            name: 712c2f0c
-            widget: string
           - hint: 'Original link: /about-us/, key: -766f6c3e'
             label: Link
             name: '-766f6c3e'
-            widget: string
-          - hint: 'Original link: /contact-us/, key: 6bfbaa95'
-            label: Link
-            name: 6bfbaa95
-            widget: string
-          - hint: 'Original link: #, key: 23'
-            label: Link
-            name: '23'
-            widget: string
-          - hint: 'Original link: https://tally.so/r/nWYeee, key: 6f526814'
-            label: Link
-            name: 6f526814
             widget: string
           - hint: 'Original link: /events/, key: -3fb480d9'
             label: Link
@@ -1767,6 +1751,26 @@ collections:
           - hint: 'Original link: /resources/, key: 5c7d819'
             label: Link
             name: 5c7d819
+            widget: string
+          - hint: 'Original link: /blogs/, key: 63a5be2d'
+            label: Link
+            name: 63a5be2d
+            widget: string
+          - hint: 'Original link: /contact-us/, key: 6bfbaa95'
+            label: Link
+            name: 6bfbaa95
+            widget: string
+          - hint: 'Original link: /speakers/, key: 712c2f0c'
+            label: Link
+            name: 712c2f0c
+            widget: string
+          - hint: 'Original link: #, key: 23'
+            label: Link
+            name: '23'
+            widget: string
+          - hint: 'Original link: https://tally.so/r/nWYeee, key: 6f526814'
+            label: Link
+            name: 6f526814
             widget: string
           - hint: 'Original link: /services#service1, key: 51cd3a52'
             label: Link
@@ -1803,10 +1807,6 @@ collections:
           - hint: 'Original link: https://twitter.com/thatsfinsweet, key: -7ff2c147'
             label: Link
             name: '-7ff2c147'
-            widget: string
-          - hint: 'Original link: /blogs/, key: 63a5be2d'
-            label: Link
-            name: 63a5be2d
             widget: string
           - hint: 'Original link: tel:+233201329873, key: 6ec51d47'
             label: Link
@@ -1856,6 +1856,32 @@ collections:
                 required: false
           - label: Image
             name: '-4ba6cd4f'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 5eba3643
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-6fa70867'
             widget: object
             fields:
               - name: url
@@ -2050,19 +2076,6 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: '-6fa70867'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
             name: 4e4f88d8
             widget: object
             fields:
@@ -2220,19 +2233,6 @@ collections:
                 required: false
           - label: Image
             name: '-2b1beb3c'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: 5eba3643
             widget: object
             fields:
               - name: url
