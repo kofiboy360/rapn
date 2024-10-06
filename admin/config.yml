@@ -1171,6 +1171,22 @@ collections:
             label: Text
             name: 6b29b517
             widget: string
+          - hint: 'Original text: Posted on 27th January 2021, key: -560e2f86'
+            label: Text
+            name: '-560e2f86'
+            widget: string
+          - hint: 'Original text: All Posts, key: 4b6bc54'
+            label: Text
+            name: 4b6bc54
+            widget: string
+          - hint: 'Original text: Previous, key: -4811e0e9'
+            label: Text
+            name: '-4811e0e9'
+            widget: string
+          - hint: 'Original text: Next, key: 24ff13'
+            label: Text
+            name: 24ff13
+            widget: string
           - hint: >-
               Original text: Empowering Regulatory Professionals Worldwide:
               Elevating Standards, Driving Innovation, and Connecting Experts
@@ -1322,22 +1338,6 @@ collections:
           - hint: 'Original text: Selby Johnson, key: -2f738288'
             label: Text
             name: '-2f738288'
-            widget: string
-          - hint: 'Original text: Posted on 27th January 2021, key: -560e2f86'
-            label: Text
-            name: '-560e2f86'
-            widget: string
-          - hint: 'Original text: All Posts, key: 4b6bc54'
-            label: Text
-            name: 4b6bc54
-            widget: string
-          - hint: 'Original text: Previous, key: -4811e0e9'
-            label: Text
-            name: '-4811e0e9'
-            widget: string
-          - hint: 'Original text: Next, key: 24ff13'
-            label: Text
-            name: 24ff13
             widget: string
           - hint: >-
               Original text: Have a question ? Get in touch with us., key:
